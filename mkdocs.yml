@@ -1,0 +1,87 @@
+site_name: Tiếng Nhật - Khu học mở
+site_description: meow meow meow meow meow meow meow meow
+site_author: duykhanh471  
+site_url: https://daihocmo.github.io
+repo_url: https://github.com/daihocmo/tieng-nhat
+repo_name: Đóng góp chỉnh sửa trang
+
+nav:
+  - 'Trang chủ': 'index.md'
+  - 'Hướng dẫn': 
+    - 'Hướng dẫn học': 'guide.md'
+    - '30 ngày Tiếng Nhật': 'routine.md'
+    - 'JLPT N5-N1': 'jlpt.md'
+    - 'Nói Tiếng Nhật': 'speaking.md'
+    - 'Tiếng Nhật trong Anime': 'animejp.md'
+    - 'Học Hán Tự': 'kanji.md'
+    - 'Hướng dẫn đơn ngữ': 'monolingual.md'
+    - 'Câu hỏi thường gặp': 'faq.md'
+    - 'Visual Novel': 'vn.md'
+  - 'Setup':
+    - 'Thiết lập môi trường học': 'setup.md'
+    - 'Cài đặt Visual Novel': 'vn-setup.md'
+  - 'Tài nguyên học': 
+    - 'Tổng hợp': 'resources.md'
+  - 'Đề xuất & Gợi ý': 
+    - 'Nội dung Tiếng Nhật': 'noi-dung-tieng-nhat.md'
+    - 'Đầu vào dễ hiểu': 'input.md'
+
+
+      
+theme:
+  palette:
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: black
+      accent: grey
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      accent: grey
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  logo: assets/logo.svg
+  favicon: assets/logo.png
+  features:
+    - navigation.instant
+    - navigation.instant.progress
+    - navigation.sections
+    - navigation.expand
+    - search.suggest
+    - search.highlighting
+    - search.share
+  custom_dir: overrides/
+  name: material
+
+markdown_extensions:
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - meta
+  - admonition
+  - attr_list
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.details
+  - pymdownx.keys
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - toc:
+      permalink: true
+      
+plugins:
+  - search
+  - open-in-new-tab
+
+extra:
+  generator: false
